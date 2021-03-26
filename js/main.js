@@ -91,4 +91,5 @@ $(document).ready(function () {
       imageSrc: "../img/newsletter-bg.jpg",
       speed: "0.2",
   });
+  AOS.init();
 });
