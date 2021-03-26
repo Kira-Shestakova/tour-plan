@@ -32,14 +32,14 @@ try {
 
     // Настройки вашей почты
     $mail->Host       = 'ssl://smtp.gmail.com'; // SMTP сервера вашей почты
-    $mail->Username   = 'kirasarapina@gmail.com'; // Логин на почте
-    $mail->Password   = 'LOC27P14'; // Пароль на почте
+    $mail->Username   = 'shestakova.kira946@gmail.com'; // Логин на почте
+    $mail->Password   = 'mailforproject'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('kirasarapina@gmail.com', 'Kira Shestakova'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('shestakova.kira946@gmail.com', 'Kira Shestakova'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('kirasarapina@gmail.com');  
+    $mail->addAddress('shestakova.kira946@gmail.com');  
      // Ещё один, если нужен
 
    
