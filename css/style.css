@@ -473,7 +473,7 @@ template {
   height: 40px;
 }
 
-.navbar-top__search_input, .navbar-menu__search_input {
+.navbar-top__search-input, .navbar-menu__search-input {
   width: 350px;
   height: 100%;
   padding-left: 23px;
@@ -486,7 +486,7 @@ template {
   color: #333333;
 }
 
-.navbar-top__search_button, .navbar-menu__search_button {
+.navbar-top__search-button, .navbar-menu__search-button {
   position: absolute;
   top: 0;
   right: 0;
@@ -537,6 +537,7 @@ template {
   color: inherit;
   text-decoration: none;
   text-transform: uppercase;
+  font-weight: bold;
   font-size: 14px;
   line-height: 18px;
 }
@@ -560,7 +561,7 @@ template {
   margin-left: 18px;
 }
 
-.navbar-menu__item_mobile_visible {
+.navbar-menu__item-mobile-visible {
   display: none;
 }
 
@@ -620,6 +621,7 @@ template {
 }
 
 .hotel-info__offer {
+  font-weight: bold;
   margin-left: 14px;
   margin-top: 4px;
 }
@@ -673,6 +675,8 @@ template {
 .hotel-slider__image {
   height: 100%;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .hotel-slider__item {
@@ -752,11 +756,13 @@ template {
 }
 
 .rating__text {
+  font-weight: bold;
   font-size: 8px;
   line-height: 10px;
 }
 
 .rating__counter {
+  font-weight: bold;
   font-size: 14px;
   line-height: 18px;
 }
@@ -986,6 +992,8 @@ template {
   width: 350px;
   height: 250px;
   border-radius: 8px 8px 0px 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .other-hotels__image--1 {
@@ -1052,6 +1060,7 @@ template {
   line-height: 160.6%;
   margin: 0;
   padding-bottom: 26px;
+  overflow-y: auto;
 }
 
 .other-hotels__price {
@@ -1466,6 +1475,7 @@ template {
   -o-object-fit: cover;
      object-fit: cover;
   z-index: -2;
+  object-fit: cover;
 }
 
 .card__title {
@@ -1571,19 +1581,19 @@ template {
   text-decoration: none;
 }
 
-.footer__icon_map {
+.footer__icon-map {
   width: 24px;
   height: 24px;
   -o-object-fit: none;
      object-fit: none;
 }
 
-.footer__icon_phone {
+.footer__icon-phone {
   width: 23px;
   height: 23px;
 }
 
-.footer__icon_message {
+.footer__icon-message {
   width: 20px;
   height: 20px;
 }
@@ -1678,6 +1688,9 @@ template {
 
 .footer__input {
   width: 100%;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .footer__input-group {
@@ -1687,6 +1700,9 @@ template {
 }
 
 .footer__message {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
   min-height: 123px;
   height: 100%;
   -ms-flex-preferred-size: 100%;
@@ -1733,9 +1749,21 @@ template {
 }
 
 .first-tel, .second-tel, .third-tel {
+  margin: 0 !important;
+}
+
+.first-tel__tel, .second-tel__tel, .third-tel__tel {
   margin: 0;
   text-decoration: none;
   color: #BDBDBD;
+}
+
+.footer__item--mb2:hover {
+  color: #BDBDBD !important;
+}
+
+.footer__contact-details .footer__item--mb2--message:hover {
+  color: #ffffff !important;
 }
 
 .modal__overlay {
@@ -1906,7 +1934,7 @@ template {
     color: #ffffff;
     background-size: 100% 2px;
   }
-  .first-tel:hover, .second-tel:hover, .third-tel:hover {
+  .first-tel__tel:hover, .second-tel__tel:hover, .third-tel__tel:hover {
     color: #ffffff;
   }
   .facebook:hover, .facebook:focus {
@@ -1945,7 +1973,7 @@ template {
   .navbar-top__search, .navbar-menu__search {
     margin-left: auto;
   }
-  .navbar-top__search_input, .navbar-menu__search_input {
+  .navbar-top__search-input, .navbar-menu__search-input {
     width: 340px;
   }
   .hotel-grid {
@@ -2126,7 +2154,7 @@ template {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .container {
     max-width: 576px;
     width: 92%;
@@ -2168,7 +2196,7 @@ template {
     margin-left: 0;
     margin-bottom: 40px;
   }
-  .navbar__mobile-fixed {
+  .navbar-mobile-fixed {
     position: fixed;
     left: 0;
     top: 0;
@@ -2184,7 +2212,7 @@ template {
   .navbar-menu__item {
     margin-bottom: 20px;
   }
-  .navbar-menu__item_mobile_visible {
+  .navbar-menu__item-mobile-visible {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2225,6 +2253,9 @@ template {
   .stars {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
+  }
+  .hotel {
+    margin-bottom: 58px;
   }
   .hotel-name {
     -ms-flex-preferred-size: 100%;
@@ -2297,9 +2328,10 @@ template {
     padding-bottom: 50px;
   }
   .reviews__title {
+    width: 80%;
     font-size: 18px;
     line-height: 23px;
-    margin-bottom: 42px;
+    margin: -5px auto 42px;
   }
   .reviews-slider__item {
     padding: 0 30px 30px;
@@ -2323,7 +2355,7 @@ template {
             transform: translate(50%, 0);
   }
   .activities {
-    padding-top: 40px;
+    padding-top: 63px;
     padding-bottom: 60px;
   }
   .activities__title {
@@ -2614,6 +2646,26 @@ template {
     width: 380px;
     width: 100%;
   }
+  .activities__card--1 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .activities__card--2 {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .activities__card--3 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .activities__card--4 {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
 }
 
 @media (max-width: 380px) {
@@ -2621,7 +2673,7 @@ template {
     max-width: 340px;
     width: 92%;
   }
-  .navbar-top__search_input, .navbar-menu__search_input {
+  .navbar-top__search-input, .navbar-menu__search-input {
     max-width: 340px;
     width: 92%;
   }
@@ -2664,6 +2716,15 @@ template {
   .newsletter__form {
     width: 280px;
     width: 100%;
+  }
+  .hotel-price-map {
+    min-height: 402px;
+  }
+  .google-map {
+    height: 172px;
+  }
+  .hotel {
+    margin-bottom: 44px;
   }
 }
 
@@ -2788,7 +2849,7 @@ template {
     right: 42%;
   }
   .activities {
-    padding-top: 57px;
+    padding-top: 40px;
     padding-bottom: 40px;
   }
   .activities__title {
@@ -2812,13 +2873,22 @@ template {
     margin-bottom: 30px;
   }
   .footer__contact-details {
-    margin-bottom: 30px;
+    margin-bottom: 4px;
   }
   .footer__title--message {
     margin-bottom: 17px;
   }
   .footer__message {
     margin-bottom: 16px;
+  }
+  .second-tel {
+    margin: 0;
+  }
+  .third-tel {
+    margin: 0;
+  }
+  .footer__item--mb2 {
+    margin-bottom: 23px;
   }
 }
 
