@@ -88,7 +88,7 @@ $(document).ready(function () {
 // Подключение параллакс-эффекта
 $(document).ready(function () {
   $(".newsletter").parallax({
-      imageSrc: "../img/newsletter-bg.jpg",
+      imageSrc: "",
       speed: "0.2",
   });
   AOS.init();

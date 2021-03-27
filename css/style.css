@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: 'Muli', sans-serif;
+  font-family: 'Mulish', sans-serif;
   color: #333333;
   background-color: #F5FAFE;
   font-display: swap;
@@ -729,6 +729,10 @@ template {
       flex-basis: 100%;
 }
 
+.stars img {
+  width: 6px;
+}
+
 .offer {
   font-size: 10px;
   line-height: 13px;
@@ -814,11 +818,7 @@ template {
   font-weight: normal;
   font-weight: normal;
   font-size: 12px;
-  line-height: 16px;
-}
-
-.booking__room {
-  margin-top: 4px;
+  line-height: 13px;
 }
 
 .booking__text {
@@ -1151,8 +1151,16 @@ template {
 }
 
 .newsletter {
+  width: 100%;
+  height: 260px;
   position: relative;
+  background-attachment: fixed;
+  background: transparent;
   padding: 98px 0 87px 0;
+  background-image: url(../img/newsletter-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .newsletter::before {
@@ -1276,7 +1284,7 @@ template {
       -ms-flex-align: center;
           align-items: center;
   max-width: 731px;
-  max-height: 280px;
+  max-height: 330px;
   margin: 45px auto 0;
   background-color: #fff;
   border-radius: 8px;
@@ -1343,7 +1351,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
 }
 
 .reviews-slider__avatar {
@@ -1371,7 +1379,6 @@ template {
   font-weight: normal;
   font-size: 10px;
   line-height: 13px;
-  margin-bottom: 4px;
 }
 
 .reviews-slider__text {
@@ -1380,9 +1387,19 @@ template {
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
-  line-height: 160%;
+  line-height: 19.2px;
   text-align: justify;
   overflow-y: auto;
+}
+
+.reviews-slider__rating {
+  margin-top: -2px;
+}
+
+.reviews-slider__rating img {
+  width: 8px;
+  margin-right: -1px;
+  margin-left: -1px;
 }
 
 .activities {
@@ -1687,7 +1704,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-left: 378px;
+  margin-left: 417px;
 }
 
 .footer__bottom-link {
