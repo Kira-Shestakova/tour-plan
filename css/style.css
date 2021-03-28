@@ -2264,6 +2264,9 @@ template {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
   }
+  .hotel {
+    margin-bottom: 58px;
+  }
   .hotel-name {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
@@ -2362,7 +2365,7 @@ template {
             transform: translate(50%, 0);
   }
   .activities {
-    padding-top: 40px;
+    padding-top: 63px;
     padding-bottom: 60px;
   }
   .activities__title {
@@ -2729,6 +2732,15 @@ template {
   .newsletter__form {
     width: 280px;
     width: 100%;
+  }
+  .hotel-price-map {
+    min-height: 402px;
+  }
+  .google-map {
+    height: 172px;
+  }
+  .hotel {
+    margin-bottom: 44px;
   }
 }
 
