@@ -15,15 +15,15 @@
 </head>
 
 <body>
-  <header class="navbar navbar__mobile-fixed">
+  <header class="navbar navbar-mobile-fixed">
     <div class="container">
       <div class="navbar-top">
         <a href="index.html" class="logo">
           <img src="img/horizontal-logo.svg" alt="logo: Best Your Plan" class="logo__image" />
         </a>
         <form action="#" class=" navbar-top__search navbar-top__search--mobile--hidden">
-          <input type="text" class="navbar-top__search_input" placeholder="Search Location" />
-          <button class="navbar-top__search_button">
+          <input type="text" class="navbar-top__search-input" placeholder="Search Location" />
+          <button class="navbar-top__search-button btn-red">
             <img src="img/search.svg" alt="search-icon" />
           </button>
         </form>
@@ -44,16 +44,16 @@
     <div class="navbar-bottom">
       <div class="container">
         <nav class="navbar-menu">
-          <li class="navbar-menu__item_mobile_visible">
+          <li class="navbar-menu__item-mobile-visible">
             <a href="#" class=" navbar-top__user navbar-top__user--mobile--visible">
               <img src="img/avatar-img.jpg" alt="user: Nathan" class="user-avatar" />
               <span class="user-name">Nathan</span>
             </a>
           </li>
-          <li class="navbar-menu__item_mobile_visible">
+          <li class="navbar-menu__item-mobile-visible">
             <form action="#" class=" navbar-top__search navbar-top__search--mobile--visible">
-              <input type="text" class="navbar-top__search_input" placeholder="Search Location" />
-              <button class="navbar-top__search_button">
+              <input type="text" class="navbar-top__search-input" placeholder="Search Location" />
+              <button class="navbar-top__search-button btn-red">
                 <img src="img/search.svg" alt="search-icon" />
               </button>
             </form>
@@ -124,7 +124,7 @@
         <!-- /.hotel-info__text -->
       </div>
       <!-- /.hotel-info -->
-      <input type="button" class="button button-back" onclick="history.back();" value="Back" />
+      <input type="button" class="button button-back btn-red" onclick="history.back();" value="Back" />
     </div>
     <!-- /.container -->
   </section>
@@ -133,7 +133,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-wrapper">
-        <a href="https://www.kadyr-nurberdiyev.ru/Best-tour/" class="logo footer__logo">
+        <a href="index.html" class="logo footer__logo">
           <img src="img/vertical-logo.svg" alt="Best tour plan" class="logo footer__logo" />
         </a>
         <div class="footer__list footer__categories">
@@ -192,9 +192,9 @@
         <div class="footer__social-network">
           <h3 class="footer__title footer__title--social">Social Network</h3>
           <div class="footer__social-links">
-            <a href="#"><img src="img/facebook.svg" alt="icon: facebook"></a>
-            <a href="#"><img src="img/youtube.svg" alt="icon: youtube"></a>
-            <a href="#"><img src="img/instagram.svg" alt="icon: instagram"></a>
+            <a href="https://facebook.com/" target="_blank" rel="nofollow noopener noreferrer"><img src="img/facebook.svg" alt="icon: facebook"></a>
+            <a href="https://www.youtube.com/" target="_blank" rel="nofollow noopener noreferrer"><img src="img/youtube.svg" alt="icon: youtube"></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="nofollow noopener noreferrer"><img src="img/instagram.svg" alt="icon: instagram"></a>
           </div>
           <!-- /.footer__social-links -->
         </div>
@@ -223,13 +223,33 @@
             </li>
             <li class="footer__item footer__item--mb2">
               <div class="footer__icon-wrapper"><img src="img/contact-phone-call.svg" alt="icon: phone call"></div>
-              Tel (business hours) : 269 1500 <br>
-              Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm) <br>
-              Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm) <br>
+              <div class="tels">
+                <span class="first-tel">Tel (business hours) :
+                  <a class="first-tel__tel" href="tel:2691500" target="_blank">
+                    269&#8209;1500
+                  </a>
+                </span>
+                <p class="second-tel">Tel (hotline) Monday - Saturday:
+                  <a class="second-tel__tel" href="tel:52566138" target="_blank">
+                    52&#8209;56&#8209;61&#8209;38
+                  </a>
+                  (08:00 am - 20:00 pm)
+                </p>
+                <p class="third-tel">Tel (hotline) Sunday:
+                  <a class="third-tel__tel" href="tel:52566138" target="_blank">
+                    52&#8209;56&#8209;61&#8209;38
+                  </a>
+                  (08:00 am – 14:00 pm)
+                </p>
+              </div>
+        
             </li>
             <li class="footer__item footer__item--mb2">
               <div class="footer__icon-wrapper"><img src="img/message.svg" alt="icon:message"></div>
-              cherly.lawson@example.com
+              <a class="footer__item footer__item--mb2 footer__item--mb2--message" href="mailto:cherly.lawson@example.com"
+                target="_blank">
+                cherly.lawson@example.com
+              </a>
             </li>
           </ul>
         </div>
@@ -240,14 +260,29 @@
           </h3>
           <form action="send.php" method="POST" class="form footer__form">
             <div class="footer__input-group">
-              <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required minlength="2" />
+              <input
+                type="text"
+                class="input footer__input"
+                placeholder="Your Full Name*"
+                name="name"
+                required
+                minlength="2"
+              />
             </div>
             <div class="footer__input-group">
-              <input type="tel" class="input footer__input phone_ru" placeholder="Phone Number*" name="phone" required
-                minlength="17" />
+              <input
+                type="tel"
+                class="input footer__input phone-ru"
+                placeholder="Phone Number*"
+                name="phone"
+                required
+                minlength="17"
+              />
             </div>
-            <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
-            <button class="button footer__button" type="submit">Send</button>
+            <textarea
+              class="message footer__message" placeholder="Message" name="message"
+            ></textarea>
+            <button class="button footer__button btn-red" type="submit">Send</button>
             <span class="info footer__info">* Required Fields</span>
           </form>
         </div>
@@ -266,8 +301,12 @@
     </div>
     <!-- /.container -->
   </footer>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="js/parallax.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/aos.js"></script>
   <script src="js/main.js"></script>
 </body>
 
